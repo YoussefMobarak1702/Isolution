@@ -59,7 +59,7 @@ jobs:
 
     steps:
     - name: apply      
-    if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
-    run: terraform apply -input=false
-    env:
-      GOOGLE_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+      if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
+      run: terraform apply -input=false
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
