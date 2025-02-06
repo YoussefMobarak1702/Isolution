@@ -15,11 +15,11 @@ variable "gke_num_nodes" {
 }
 variable "project_id" {
 
-    default     = "isolution-450009"
-    description = "project id"
+  default     = "isolution-450009"
+  description = "project id"
 }
 
 variable "region" {
-    default   ="us-central1"
+  default     = "us-central1"
   description = "region"
 }
